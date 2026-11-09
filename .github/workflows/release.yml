@@ -1,10 +1,11 @@
 name: Release
 
-on:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+# 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
